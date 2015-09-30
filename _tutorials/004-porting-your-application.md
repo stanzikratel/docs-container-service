@@ -284,6 +284,11 @@ bootstrap() {
   syncAssets
 
   webCluster
+
+  echo "**********************************************"
+  echo "Your application is available at: $INTERLOCK"
+  echo "Please add this to /etc/hosts with a domain"
+  echo "**********************************************"
 }
 
 bootstrap
@@ -298,9 +303,9 @@ Building the containers may take about 15 minutes the first time because the pro
 Sending build context to Docker daemon 120.8 kB
 Step 0 : FROM ruby:2.2.1
 2.2.1: Pulling from library/ruby
-511136ea3c5a: Pull complete 
-d338bb63f151: Pull complete 
-65688f7c61c4: Pull complete 
+511136ea3c5a: Pull complete
+d338bb63f151: Pull complete
+65688f7c61c4: Pull complete
 ...
 Tasks: TOP => environment
 (See full trace by running task with --trace)
@@ -349,4 +354,3 @@ Interlock provides a web UI for monitoring. Visit `test.com/haproxy?stats`; the 
 ### Next Steps
 
 Try another tutorial or migrate another Rails app.
-
